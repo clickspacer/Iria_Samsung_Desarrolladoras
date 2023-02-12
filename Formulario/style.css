@@ -1,0 +1,95 @@
+
+
+
+.form-container {
+  width: 500px;
+  height: 900px;
+  background-color: lightgray;
+  margin: 0 auto;
+  border: white solid 2px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width:100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: column;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group input[type="text"].valid,
+.form-group input[type="email"].valid,
+.form-group input[type="password"].valid {
+  border-color: green;
+}
+
+.form-group input[type="text"].invalid,
+.form-group input[type="email"].invalid
+.form-group input[type="password"].invalid{
+border-color:red;
+}
+
+.form-group .error-message {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+  display: none;
+}
+
+.form-group.error input {
+  border-color: red;
+}
+
+.form-group.error .error-message {
+  display: block;
+}
+
+.form-group.success input {
+  border-color: green;
+}
+
+.form-group.success .success-icon {
+  display: inline-block;
+  background-image: url('./images/success-icon.svg');
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.form-group .required-icon {
+  display: inline-block;
+  background-image: url('./images/error-icon.svg');
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
